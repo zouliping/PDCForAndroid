@@ -5,5 +5,12 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="go">opening</string>
+    <string name="default_name">default</string>
+
+    <!-- for login -->
+    <string name="uname">Username</string>
+    <string name="upwd">Password</string>
+    <string name="login_text">Login</string>
+    <string name="rights_text">©zouliping</string>
 
 </resources>

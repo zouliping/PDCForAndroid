@@ -16,6 +16,8 @@ public class MainActivity extends InstrumentedActivity {
 		AppUtil.setNotTitleScreen(MainActivity.this);
 		setContentView(R.layout.main);
 		initView();
+
+		JPushInterface.setAlias(getApplicationContext(), Util.uid, null);
 	}
 
 	private void initView() {

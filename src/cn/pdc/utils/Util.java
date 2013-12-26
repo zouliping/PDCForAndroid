@@ -12,6 +12,8 @@ import android.os.Bundle;
 
 public class Util {
 
+	public static String uid = "";
+	public static String uname = "";
 	public static final String KEY_APP_KEY = "JPUSH_APPKEY";
 
 	/**

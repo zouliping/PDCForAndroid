@@ -15,7 +15,7 @@ public class GoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		AppUtil.setNotTitleScreen(GoActivity.this);
-		setContentView(R.layout.go_layout);
+		setContentView(R.layout.activity_go);
 
 		initData();
 		AppUtil.shareToWeibo(GoActivity.this, content);
