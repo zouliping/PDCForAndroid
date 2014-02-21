@@ -83,4 +83,21 @@ public class AppUtil {
 		intent.putExtra(Intent.EXTRA_TEXT, content);
 		mContext.startActivity(Intent.createChooser(intent, "share"));
 	}
+
+	/**
+	 * open a specific activity
+	 * 
+	 * @param mContext
+	 * @param packagename
+	 * @param activityname
+	 */
+	public static void openActivity(Context mContext, String packagename,
+			String activityname, String info) {
+		ComponentName name = new ComponentName(packagename, activityname);
+		Intent i = new Intent(Intent.ACTION_SEND);
+		i.setType("text/plain");
+		i.putExtra(Intent.EXTRA_TEXT, info);
+		i.setComponent(name);
+		mContext.startActivity(i);
+	}
 }

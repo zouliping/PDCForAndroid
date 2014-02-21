@@ -6,6 +6,7 @@ import android.os.Bundle;
 import cn.jpush.android.api.JPushInterface;
 import cn.pdc.R;
 import cn.pdc.utils.AppUtil;
+import cn.pdc.utils.Config;
 
 public class GoActivity extends Activity {
 
@@ -18,7 +19,11 @@ public class GoActivity extends Activity {
 		setContentView(R.layout.activity_go);
 
 		initData();
-		AppUtil.shareToWeibo(GoActivity.this, content);
+		// open mechanism of android sharing
+		// AppUtil.shareToWeibo(GoActivity.this, content);
+		// open weiciyuan application and send content to weibo
+		AppUtil.openActivity(GoActivity.this, Config.WEICIYUAN_PACKAGE_NAME,
+				Config.WEICIYUAN_ACTIIVTY_NAME, content);
 	}
 
 	private void initData() {
